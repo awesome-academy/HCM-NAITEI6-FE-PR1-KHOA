@@ -14,7 +14,7 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
+  3: $spacer * 1,
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 4,
@@ -28,5 +28,29 @@ $spacers: (
 ) !default;
 
 $enable-negative-margins:     true !default;
+
+
+
+$utilities: () !default;
+$utilities: map-merge((
+  "w": (
+      property: width,
+      class: w,
+      values: (
+        20:20%,
+        40:40%,
+      )
+    ),
+), $utilities);
+
+
+$carousel-indicator-width:           6px !default;
+$carousel-indicator-height:          6px !default;
+$carousel-indicator-hit-area-height: 10px !default;
+$carousel-indicator-spacer:          3px !default;
+$carousel-indicator-opacity:         .5 !default;
+$carousel-indicator-active-opacity:  1 !default;
+$carousel-indicator-transition:      opacity .6s ease !default;
+
 
 @import '../node_modules/bootstrap/scss/bootstrap';

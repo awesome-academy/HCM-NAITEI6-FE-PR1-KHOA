@@ -1,0 +1,43 @@
+.list-product {
+    margin-top: 47px;
+    .product {
+        &:before {
+            content: url(../images/sale-small.png);
+            position: absolute;            
+        }
+        &:after {
+            content: url(../images/line-small.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+        }
+        .atb {
+            font-size: 1.6rem;
+            top: 10px;
+            left: 5px;
+            transform: rotate(-45deg);
+        }
+        &-content {
+            padding: 25px 45px;
+            .price-box {
+                margin-top: 1.6rem;
+                &-new {
+                    color: $primary-color;
+                    font-size: 2.1rem;
+                    font-family: 'UTM Caviar';
+                }
+                &-old {
+                    color: $text-color;
+                    font-size: 1.4rem;
+                    font-family: 'UTM Caviar';
+                }
+            }
+            
+        }
+        &-name a {
+            font-size: 1.4rem;
+            color: $title-color;
+        }
+    }
+}
