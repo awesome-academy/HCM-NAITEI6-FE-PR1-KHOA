@@ -1,0 +1,20 @@
+.breadcrumb-area {
+    .breadcrumb-content {
+        li {
+            margin-right: 7px;
+        }
+        a {
+            &:after {
+                position: absolute;
+                content: "";
+                background: #000000;
+                width: 5px;
+                height: 1px;
+                top: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                right: -15px;
+            }
+        }
+    }
+}
