@@ -23,6 +23,15 @@
             .shop_toolbar_btn {
                 button {
                     border: none;
+                    background: none;
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+                .active {
+                    i {
+                        color: $primary-color;
+                    }
                 }
             }
         }

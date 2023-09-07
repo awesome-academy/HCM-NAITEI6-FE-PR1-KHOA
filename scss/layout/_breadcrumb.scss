@@ -24,18 +24,25 @@
     .breadcrumb-content {
         li {
             margin-right: 7px;
+            &:last-child {
+                a {
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+            
+        }
+        .active {
+            color: $primary-color;
         }
         a {
+            font-size: 1.4rem;
+            color: $text-color;
             &:after {
                 position: absolute;
-                content: "";
-                background: #000000;
-                width: 5px;
-                height: 1px;
-                top: 50%;
-                -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-                right: -15px;
+                content: "/";
+                right: -6px;
             }
         }
     }

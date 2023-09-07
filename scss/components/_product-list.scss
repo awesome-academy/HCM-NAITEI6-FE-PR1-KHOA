@@ -1,6 +1,15 @@
 .list-product {
     margin-top: 47px;
     .product {
+        &.hide-pseudo {
+            &:before,
+            &:after {
+              display: none; // Ẩn pseudo-elements khi có lớp hide-pseudo
+            }
+        }
+        .hide {
+            display: none;
+        }
         &:before {
             content: url(../images/sale-small.png);
             position: absolute;            
@@ -20,6 +29,9 @@
         }
         &-content {
             padding: 25px 45px;
+            .btn {
+                width: 122px;
+            }
             .price-box {
                 margin-top: 1.6rem;
                 &-new {
@@ -39,5 +51,12 @@
             font-size: 1.4rem;
             color: $title-color;
         }
+    }
+}
+.grid-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .grid-type {
+        border-bottom: none !important;
     }
 }
