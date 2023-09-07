@@ -62,7 +62,7 @@
             <div class="container px-4">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand menu-nav my-3" href="#">
+                        <a class="navbar-brand menu-nav my-3" href="index.html">
                             <div class="logo position-relative">
                                 <img src="./images/Vector Smart Object.png" alt="Logo" width="121" height="128"
                                     class="d-inline-block align-text-top" />
@@ -84,7 +84,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item has-children">
-                                    <a class="nav-link text-white text-uppercase" href="#shop-left-sidebar.html">Rượu
+                                    <a class="nav-link text-white text-uppercase" href="shop-left-sidebar.html">Rượu
                                         vang đỏ</a>
                                     <ul class="mega-menu">
                                         <img src="./images/arrow-menu.png" alt=""
@@ -170,111 +170,302 @@
         <section class="cart">
             <div class="container px-4">
                 <h3 class="name text-uppercase mb-10">Giỏ hàng</h3>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cart-table table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th class="pro-thumbnail">Ảnh</th>
-                                        <th class="pro-title">Tên sản phẩm</th>
-                                        <th class="pro-price">Giá</th>
-                                        <th class="pro-quantity">Số lượng</th>
-                                        <th class="pro-subtotal">Tổng số</th>
-                                        <th class="pro-remove">Xóa</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="pro-thumbnail">
-                                            <a href="#"><img class="fit-image" src="./images/cart1.png"
-                                                    alt="Product"></a>
-                                        </td>
-                                        <td class="pro-title"><a href="#">Learn About Fish Farming</a></td>
-                                        <td class="pro-price"><span>345.000 đ</span></td>
-                                        <td class="pro-quantity">
-                                            <div class="quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" value="1" type="text">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="pro-subtotal"><span>345.000 đ</span></td>
-                                        <td class="pro-remove"><a href="#"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img class="fit-image"
-                                                    src="./images/product2.jpeg" alt="Product"></a></td>
-                                        <td class="pro-title"><a href="#">Basic Birds Food</a></td>
-                                        <td class="pro-price"><span>345.000 đ</span></td>
-                                        <td class="pro-quantity">
-                                            <div class="quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" value="1" type="text">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="pro-subtotal"><span>345.000 đ</span></td>
-                                        <td class="pro-remove"><a href="#"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img class="fit-image"
-                                                    src="./images/product2.jpeg" alt="Product"></a></td>
-                                        <td class="pro-title"><a href="#">Dog Trainning Center</a></td>
-                                        <td class="pro-price"><span>345.000 đ</span></td>
-                                        <td class="pro-quantity">
-                                            <div class="quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" value="1" type="text">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="pro-subtotal"><span>345.000 đ</span></td>
-                                        <td class="pro-remove"><a href="#"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img class="fit-image"
-                                                    src="./images/product2.jpeg" alt="Product"></a></td>
-                                        <td class="pro-title"><a href="#">Animal Rescue Center</a></td>
-                                        <td class="pro-price"><span>345.000 đ</span></td>
-                                        <td class="pro-quantity">
-                                            <div class="quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" value="1" type="text">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="pro-subtotal"><span>345.000 đ</span></td>
-                                        <td class="pro-remove"><a href="#"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                </tbody>
-                                <!-- Table Body End -->
 
-                            </table>
-                        </div>
-                        <!-- Cart Table End -->
+                <ul class="cart-page-menu nav row clearfix mb-30">
+                    <li><a href="#shopping-cart" data-bs-toggle="tab" class="active">shopping cart</a></li>
+                    
+                    <li><a  href="#check-out" data-bs-toggle="tab">check out</a></li>
+                    <li><a href="#order-complete" data-bs-toggle="tab">order complete</a></li>
+                </ul>
 
-                        <!-- Cart Button Start -->
-                        <div class="cart-button-section mb-n4 d-flex justify-content-end mt-4">
-
-                            <!-- Cart Button left Side Start -->
-                            <div class="cart-btn-lef-side mb-4">
-                                <a href="#" class="btn text-uppercase rounded-0 bg-black text-white">Tiếp tục mua hàng</a>
-                                <a href="#" class="btn text-uppercase rounded-0 bg-black text-white ms-4">Xóa</a>
+                <div class="tab-content mt-8">
+                    <!-- shopping-cart start -->
+                    <div class="tab-pane active" id="shopping-cart">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="cart-table table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="pro-thumbnail">Ảnh</th>
+                                                <th class="pro-title">Tên sản phẩm</th>
+                                                <th class="pro-price">Giá</th>
+                                                <th class="pro-quantity">Số lượng</th>
+                                                <th class="pro-subtotal">Tổng số</th>
+                                                <th class="pro-remove">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cart-button-section mb-n4 d-flex justify-content-end mt-4">
+                                    <div class="cart-btn-lef-side mb-4">
+                                        <a href="#" class="btn text-uppercase rounded-0 bg-black text-white">Tiếp tục mua
+                                            hàng</a>
+                                        <a href="#" class="btn text-uppercase rounded-0 bg-black text-white ms-4" id="clearCartBtn">Xóa</a>
+                                    </div>
+                                    <div class="cart-btn-right-right mb-4 ms-4">
+                                        <a href="#" class="btn text-uppercase rounded-0 bg-black text-white">Cập nhật</a>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Cart Button left Side End -->
-
-                            <!-- Cart Button Right Side Start -->
-                            <div class="cart-btn-right-right mb-4 ms-4">
-                                <a href="#" class="btn text-uppercase rounded-0 bg-black text-white">Cập nhật</a>
-                            </div>
-                            <!-- Cart Button Right Side End -->
-
                         </div>
-                        <!-- Cart Button End -->
-
                     </div>
+                    <!-- shopping-cart end -->
+                    <!-- check-out start -->
+                    <div class="tab-pane" id="check-out">
+                        <form action="#">
+                            <div class="shop-cart-table check-out-wrap cart-checkout">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="billing-details pr-20">
+                                            <h4 class="title-1 title-border text-uppercase mb-5 text-black">billing details</h4>
+                                            <input type="text" placeholder="Your name here...">
+                                            <input type="text" placeholder="Email address here...">
+                                            <input type="text" placeholder="Phone here...">
+                                            <input type="text" placeholder="Company neme here...">
+                                            <select class="custom-select mb-4">
+                                                <option>Contry</option>
+                                                <option>Bangladesh</option>
+                                                <option>United States</option>
+                                                <option>united Kingdom</option>
+                                                <option>Australia</option>
+                                                <option>Canada</option>
+                                            </select>
+                                            <select class="custom-select mb-4">
+                                                <option>State</option>
+                                                <option>Dhaka</option>
+                                                <option>New York</option>
+                                                <option>London</option>
+                                                <option>Melbourne</option>
+                                                <option>Ottawa</option>
+                                            </select>
+                                            <select class="custom-select mb-4">
+                                                <option>Town / City</option>
+                                                <option>Dhaka</option>
+                                                <option>New York</option>
+                                                <option>London</option>
+                                                <option>Melbourne</option>
+                                                <option>Ottawa</option>
+                                            </select>
+                                            <textarea class="custom-textarea" placeholder="Your address here..." ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-xs-30">
+                                        <div class="billing-details ps-2">
+                                            <h4 class="title-1 title-border text-uppercase mb-5 text-black">ship to different address</h4>
+                                            <input type="text" placeholder="Your name here...">
+                                            <input type="text" placeholder="Email address here...">
+                                            <input type="text" placeholder="Phone here...">
+                                            <input type="text" placeholder="Company neme here...">
+                                            <select class="custom-select mb-4">
+                                                <option>Contry</option>
+                                                <option>Bangladesh</option>
+                                                <option>United States</option>
+                                                <option>united Kingdom</option>
+                                                <option>Australia</option>
+                                                <option>Canada</option>
+                                            </select>
+                                            <select class="custom-select mb-4">
+                                                <option>State</option>
+                                                <option>Dhaka</option>
+                                                <option>New York</option>
+                                                <option>London</option>
+                                                <option>Melbourne</option>
+                                                <option>Ottawa</option>
+                                            </select>
+                                            <select class="custom-select mb-4">
+                                                <option>Town / City</option>
+                                                <option>Dhaka</option>
+                                                <option>New York</option>
+                                                <option>London</option>
+                                                <option>Melbourne</option>
+                                                <option>Ottawa</option>
+                                            </select>
+                                            <textarea class="custom-textarea" placeholder="Your address here..." ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="our-order payment-details mt-8 pe-2">
+                                            <h4 class="title-1 title-border text-uppercase mb-5 text-black">our order</h4>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th><strong>Product</strong></th>
+                                                        <th class="text-end"><strong>Total</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- <tr>
+                                                        <td>Dummy Product Name  x 2</td>
+                                                        <td class="text-end">$86.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dummy Product Name  x 1</td>
+                                                        <td class="text-end">$69.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cart Subtotal</td>
+                                                        <td class="text-end">$155.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shipping and Handing</td>
+                                                        <td class="text-end">$15.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vat</td>
+                                                        <td class="text-end">$00.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Order Total</td>
+                                                        <td class="text-end">$170.00</td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- payment-method -->
+                                    <div class="col-md-6">
+                                        <div class="payment-method mt-8  ps-2">
+                                            <h4 class="title-1 title-border text-uppercase mb-5 text-black">payment method</h4>
+                                            <div class="payment-accordion">
+                                                <!-- Accordion start  -->
+                                                <h3 class="payment-accordion-toggle active text-black">Direct Bank Transfer</h3>
+                                                <div class="payment-content default">
+                                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+                                                </div> 
+                                                <!-- Accordion end -->
+                                                <!-- Accordion start -->
+                                                <h3 class="payment-accordion-toggle text-black">Cheque Payment</h3>
+                                                <div class="payment-content">
+                                                    <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                                </div>
+                                                <!-- Accordion end -->
+                                                <!-- Accordion start -->
+                                                <h3 class="payment-accordion-toggle text-black">PayPal</h3>
+                                                <div class="payment-content">
+                                                    <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                                                    <a href="#"><img src="./images/payment/1.png" alt="" /></a>
+                                                    <a href="#"><img src="./images/payment/2.png" alt="" /></a>
+                                                    <a href="#"><img src="./images/payment/3.png" alt="" /></a>
+                                                    <a href="#"><img src="./images/payment/4.png" alt="" /></a>
+                                                </div>
+                                                <!-- Accordion end --> 
+                                                <button class="button-one submit-button mt-4" data-text="place order" type="submit">place order</button>			
+                                            </div>															
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>											
+                    </div>
+                    <!-- check-out end -->
+                    <!-- order-complete start -->
+                    <div class="tab-pane" id="order-complete">
+                        <form action="#">
+                            <div class="thank-recieve mb-5">
+                                <p>Thank you. Your order has been received.</p>
+                            </div>
+                            <div class="order-info text-black text-center clearfix mb-5">
+                                <div class="single-order-info">
+                                    <h4 class="title-1 text-uppercase text-light-black mb-0">order no</h4>
+                                    <p class="text-uppercase text-light-black mb-0"><strong>m 2653257</strong></p>
+                                </div>
+                                <div class="single-order-info">
+                                    <h4 class="title-1 text-uppercase text-light-black mb-0">Date</h4>
+                                    <p class="text-uppercase text-light-black mb-0"><strong>june 15, 2021</strong></p>
+                                </div>
+                                <div class="single-order-info">
+                                    <h4 class="title-1 text-uppercase text-light-black mb-0">Total</h4>
+                                    <p class="text-uppercase text-light-black mb-0"><strong>$ 170.00</strong></p>
+                                </div>
+                                <div class="single-order-info">
+                                    <h4 class="title-1 text-uppercase text-light-black mb-0">payment method</h4>
+                                    <p class="text-uppercase text-light-black mb-0"><a href="#"><strong>check payment</strong></a></p>
+                                </div>
+                            </div>
+                            <div class="shop-cart-table check-out-wrap">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="our-order payment-details pr-20">
+                                            <h4 class="title-1 title-border text-uppercase mb-30">our order</h4>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th><strong>Product</strong></th>
+                                                        <th class="text-end"><strong>Total</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Dummy Product Name  x 2</td>
+                                                        <td class="text-end">$86.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dummy Product Name  x 1</td>
+                                                        <td class="text-end">$69.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cart Subtotal</td>
+                                                        <td class="text-end">$155.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shipping and Handing</td>
+                                                        <td class="text-end">$15.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vat</td>
+                                                        <td class="text-end">$00.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Order Total</td>
+                                                        <td class="text-end">$170.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- payment-method -->
+                                    <div class="col-md-6 mt-xs-30">
+                                        <div class="payment-method  pl-20">
+                                            <h4 class="title-1 title-border text-uppercase mb-30">payment method</h4>
+                                            <div class="payment-accordion">
+                                                <!-- Accordion start  -->
+                                                <h3 class="payment-accordion-toggle active">Direct Bank Transfer</h3>
+                                                <div class="payment-content default">
+                                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+                                                </div> 
+                                                <!-- Accordion end -->
+                                                <!-- Accordion start -->
+                                                <h3 class="payment-accordion-toggle">Cheque Payment</h3>
+                                                <div class="payment-content">
+                                                    <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                                </div>
+                                                <!-- Accordion end -->
+                                                <!-- Accordion start -->
+                                                <h3 class="payment-accordion-toggle">PayPal</h3>
+                                                <div class="payment-content">
+                                                    <p>Pay via PayPal; you can pay with your credit card if you don�t have a PayPal account.</p>
+                                                    <a href="#"><img src="./images/payment/1.png" alt="" /></a>
+                                                    <a href="#"><img src="./images/payment/2.png" alt="" /></a>
+                                                    <a href="#"><img src="./images/payment/3.png" alt="" /></a>
+                                                    <a href="#"><img src="./images/payment/4.png" alt="" /></a>
+                                                </div>
+                                                <!-- Accordion end --> 
+                                              
+                                            </div>															
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>										
+                    </div>
+                    <!-- order-complete end -->
                 </div>
+                
+                
             </div>
         </section>
 
@@ -403,6 +594,10 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

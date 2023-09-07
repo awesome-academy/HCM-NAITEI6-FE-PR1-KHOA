@@ -13,7 +13,7 @@ $spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: $spacer * .25,
-  2: $spacer * .5,
+  2: $spacer * 2,
   3: $spacer * 1,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -52,6 +52,9 @@ $carousel-indicator-opacity:         .5 !default;
 $carousel-indicator-active-opacity:  1 !default;
 $carousel-indicator-transition:      opacity .6s ease !default;
 
+// $nav-link-font-size:                16px !default;
+$nav-link-hover-color:              #e6ae48 !default;
+$nav-pills-link-active-bg:          #e6ae48 !default;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 

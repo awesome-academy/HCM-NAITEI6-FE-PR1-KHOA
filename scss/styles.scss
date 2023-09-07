@@ -11,6 +11,8 @@
 @import "./layout/static-block";
 @import "./layout/blog-news";
 @import "./components/product-list";
+@import "./components/toast";
+@import "./components/logo";
 @import "./pages/index";
 @import "./layout/footer";
 @import "./layout/breadcrumb";
@@ -21,3 +23,6 @@
 @import "./pages/blog";
 @import "./pages/detail-blog";
 @import "./pages/cart";
+@import "./pages/single-product";
+@import "./pages/contact";
+
