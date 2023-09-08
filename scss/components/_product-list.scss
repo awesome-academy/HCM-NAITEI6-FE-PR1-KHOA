@@ -47,9 +47,12 @@
             }
             
         }
-        &-name a {
-            font-size: 1.4rem;
-            color: $title-color;
+        &-name {
+            height: 50px;
+            a {
+                font-size: 1.4rem;
+                color: $title-color;
+            }
         }
     }
 }
